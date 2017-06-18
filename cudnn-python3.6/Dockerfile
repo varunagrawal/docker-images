@@ -18,3 +18,5 @@ RUN apt-get update \
 # Useful symbolic links 
 RUN ln -s /usr/bin/python3.6 /usr/bin/python3
 RUN ln -s /usr/bin/python3.6 /usr/bin/python
+
+RUN pip3 install -U pip
