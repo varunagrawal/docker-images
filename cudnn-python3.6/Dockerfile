@@ -2,6 +2,8 @@ FROM nvidia/cuda:8.0-cudnn6-devel-ubuntu16.04
 
 MAINTAINER Varun Agrawal "varunagrawal@gatech.edu"
 
+ENV DEBIAN_FRONTEND noninteractive
+
 RUN apt-get update \
         && apt-get install -y software-properties-common curl \
         && add-apt-repository ppa:jonathonf/python-3.6 \
