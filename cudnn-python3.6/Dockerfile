@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update \
         && apt-get install -y software-properties-common curl \
-        && add-apt-repository ppa:jonathonf/python-3.6 \
+        && add-apt-repository ppa:fkrull/deadsnakes \
         && apt-get remove -y software-properties-common \
         && apt autoremove -y \
         && apt-get update \
@@ -14,3 +14,7 @@ RUN apt-get update \
         && curl -o /tmp/get-pip.py "https://bootstrap.pypa.io/get-pip.py" \
         && python3.6 /tmp/get-pip.py \
         && apt-get install -y ruby git gcc g++ build-essential
+
+# Useful symbolic links 
+RUN ln -s /usr/bin/python3.6 /usr/bin/python3
+RUN ln -s /usr/bin/python3.6 /usr/bin/python
