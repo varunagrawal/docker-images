@@ -22,4 +22,5 @@ RUN ln -s /usr/bin/python3.6 /usr/bin/python
 RUN pip3 install -U pip numpy scipy requests tqdm
 
 # Install PyTorch from its repository
-RUN pip3 install git+https://github.com/pytorch/pytorch.git
+RUN pip3 install http://download.pytorch.org/whl/cu80/torch-0.2.0.post1-cp36-cp36m-manylinux1_x86_64.whl 
+RUN pip3 install torchvision
