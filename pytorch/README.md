@@ -2,7 +2,7 @@
 
 Docker Image with:
 
-- Latest PyTorch
+- PyTorch 0.2.0
 - Python 3.6
 - CUDA 8.0 
 - cuDNN 6
