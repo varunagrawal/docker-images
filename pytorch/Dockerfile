@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update \
         && apt-get install -y software-properties-common curl \
-        && add-apt-repository ppa:fkrull/deadsnakes \
+        && add-apt-repository -y ppa:fkrull/deadsnakes \
         && apt-get remove -y software-properties-common \
         && apt autoremove -y \
         && apt-get update \
