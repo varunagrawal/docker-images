@@ -1,0 +1,1 @@
+Base image with GTSAM dependencies
