@@ -1,4 +1,4 @@
-FROM quay.io/pypa/manylinux2014_x86_64
+FROM quay.io/pypa/manylinux_2_24_x86_64
 
 # Install packages required for build
 RUN yum install -y wget libicu libicu-devel centos-release-scl-rh devtoolset-7-gcc-c++
