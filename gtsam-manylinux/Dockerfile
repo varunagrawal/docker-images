@@ -1,7 +1,8 @@
 FROM quay.io/pypa/manylinux_2_24_x86_64
 
 # Install packages required for build
-RUN yum install -y wget libicu libicu-devel centos-release-scl-rh devtoolset-7-gcc-c++
+# RUN yum install -y wget libicu libicu-devel centos-release-scl-rh devtoolset-7-gcc-c++
+RUN apt-get -y update && apt-get install -y wget libicu-dev build-essential apt-utils git cmake software-properties-common pkg-config  
 
 # Download and install Boost-1.65.1
 RUN mkdir -p boost && \
