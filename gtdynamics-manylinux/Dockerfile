@@ -1,4 +1,4 @@
-FROM gtsam-manylinux:latest
+FROM varunagrawal/gtsam-manylinux:latest
 
 # Disable GUI prompts
 ENV DEBIAN_FRONTEND noninteractive
