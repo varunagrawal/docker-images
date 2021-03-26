@@ -31,7 +31,7 @@ RUN cmake \
     ..
 
 # Build
-RUN make -j4 install && make clean
+RUN make -j2 install && make clean
 
 # Needed to link with GTSAM
 RUN echo 'export LD_LIBRARY_PATH=/usr/local/lib:LD_LIBRARY_PATH' >> /root/.bashrc
